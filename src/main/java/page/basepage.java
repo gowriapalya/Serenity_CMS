@@ -8,6 +8,7 @@ public class basepage extends PageObject{
 	
 	public void login(String username,String password)
 	{
+		open();
 		waitFor(l.username).$(l.username).type(username);
 		waitFor(l.password).$(l.password).typeAndEnter(password);
 		
